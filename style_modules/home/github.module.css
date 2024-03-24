@@ -1,0 +1,54 @@
+.block {
+    color: var(--color4);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block h2 {
+    color: var(--color3);
+}
+
+.avatar {
+    padding: auto;
+    margin-right: 20px;
+}
+
+.github_project {
+    background-color: var(--color2);
+    border: 3px solid var(--color3);
+    box-shadow: 0 0 10px var(--color3);
+}
+
+.github_project_header {
+    color: var(--color1);
+    background-color: var(--color3);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.github_project_image {
+    width:293px;
+}
+
+.github_project_footer {
+    text-decoration: none;
+    color: var(--color1);
+    background-color: var(--color3);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.table {
+    display: table;
+}
+
+.table_row {
+    display: table-row;
+}
+
+.table_row div {
+    display: table-cell;
+
+    padding: 5px 0px;
+    min-width: 100px;
+}

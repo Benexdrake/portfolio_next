@@ -1,0 +1,26 @@
+.skill_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 10px;
+    border: 0.1rem solid var(--color3);
+    box-shadow: 0 0 20px var(--color3);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.skill {
+    background-color: var(--color2);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+    color: var(--color3);
+}
+
+.header {
+    color: var(--color3);
+    text-align: center;
+    text-shadow: 0 0 10px var(--color4);
+    -webkit-text-stroke: 0.1px var(--color1);
+}

@@ -1,0 +1,28 @@
+.container
+{
+    margin: auto;
+    padding: 0rem;
+    max-width: 1000px;
+}
+
+.box {
+    background-color: var(--color1);
+    height: auto;
+    margin: 1rem auto;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.header {
+    color: var(--color3);
+}
+
+.text_block {
+    color: var(--color4);
+}
+
+.break_line {
+    color: var(--color4);
+    margin: 10px 0;
+}

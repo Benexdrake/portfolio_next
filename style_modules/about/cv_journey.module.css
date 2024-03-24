@@ -1,0 +1,26 @@
+.break_line {
+    color: var(--color1);
+    margin: 10px 0;
+}
+
+.header {
+    color: var(--color3);
+    text-align: center;
+    text-shadow: 0 0 10px var(--color4);
+    -webkit-text-stroke: 0.1px var(--color1)
+}
+
+.table {
+    display: table;
+    color: var(--color1);
+}
+
+.table_row {
+    display: table-row;
+}
+
+.table_row div {
+    display: table-cell;
+    padding: 5px 20px;
+    min-width: 100px;
+}

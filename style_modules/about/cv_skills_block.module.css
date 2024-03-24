@@ -1,0 +1,42 @@
+.header {
+    color: var(--color4);
+    text-align: center;
+    text-shadow: 0 0 10px var(--color3);
+    padding: 10px 0;
+}
+
+.table {
+    display: table;
+    margin: 0 20px;
+}
+
+.table_row {
+    display: table-row;
+}
+
+.table_row > div {
+    padding: 2px 0;
+    display: table-cell;
+}
+
+.table_cell {
+    display: table-cell;
+    color: var(--color4);
+}
+
+.table_cell_left {
+    display: table-cell;
+    color: var(--color4);
+    width: 200px;
+}
+
+.table_cell_right {
+    display: table-cell;
+    color: var(--color3);
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.table_cell_right:hover {
+    color: var(--color4);
+}
