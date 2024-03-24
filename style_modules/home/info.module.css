@@ -41,6 +41,7 @@
 }
 
 .aboutMe_status {
+    font-size: 0.8rem;
     background-color: var(--color2);
     padding: 10px;
     border-radius: 5px;
@@ -67,11 +68,8 @@
 
 .icon >i:hover {
     color: var(--color4);
-    box-shadow: 0 0 20px var(--color3);
+    text-shadow: 0px 0px 10px var(--color3);
 }
-
-
-
 
 
 .info {
@@ -84,14 +82,14 @@
     border-bottom: 2px solid var(--color3);
 }
 
+.info a {
+    text-decoration: none;
+    color: var(--color4);
+}
+
 .info_title {
     font-size: 0.6rem;
 }
-
-
-
-
-
 
 
 .btn_block {

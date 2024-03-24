@@ -37,3 +37,6 @@ next-env.d.ts
 .env
 public/Me.png
 public/aboutMe.json
+public/aboutMe____.json
+public/about.json
+public/information.json
