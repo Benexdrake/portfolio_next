@@ -23,10 +23,10 @@ export default function AboutMe(props:any) {
             <div className={styles.aboutMe_position}>
               <img className={styles.aboutMe_image} src="./Me.png" alt="" />
               <div className={styles.aboutMe_title}>
-                <h1>{aboutMe.aboutMe.name}</h1>
+                <h1>{aboutMe.name}</h1>
               </div>
               <div className={styles.aboutMe_status}>
-                <p>{aboutMe.aboutMe.title}</p>
+                <p>{aboutMe.title}</p>
               </div>
                 <ul className={styles.icons}>
                   <li className={styles.icon}><i className="fa-brands fa-github"></i></li>
@@ -38,7 +38,7 @@ export default function AboutMe(props:any) {
                   </div>
                         <div>
                             <p className={styles.info_title}>Phone</p>
-                            <p>{aboutMe.aboutMe.tel}</p>
+                            <p>{aboutMe.tel}</p>
                         </div>
                 </div>
                 <div className={styles.info}>
@@ -47,7 +47,7 @@ export default function AboutMe(props:any) {
                   </div>
                         <div>
                             <p className={styles.info_title}>E-Mail</p>
-                            <a href={'mailto:'+aboutMe.aboutMe.email}>{aboutMe.aboutMe.email}</a>
+                            <a href={'mailto:'+aboutMe.email}>{aboutMe.email}</a>
                         </div>
                 </div>
                 <div className={styles.info}>
@@ -56,7 +56,7 @@ export default function AboutMe(props:any) {
                   </div>
                         <div>
                             <p className={styles.info_title}>Location</p>
-                            <p>{aboutMe.aboutMe.location}</p>
+                            <p>{aboutMe.location}</p>
                         </div>
                 </div>
                 <div className={styles.info}>
@@ -65,7 +65,7 @@ export default function AboutMe(props:any) {
                   </div>
                         <div>
                             <p className={styles.info_title}>Language</p>
-                            <p>{aboutMe.aboutMe.language.join(', ')}</p>
+                            <p>{aboutMe.language.join(', ')}</p>
                         </div>
                 </div>
                 <div className={styles.btn_block}>

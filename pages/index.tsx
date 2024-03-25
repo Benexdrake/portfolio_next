@@ -1,7 +1,10 @@
+import WhatIDo from '@/components/home/whatido';
+import Skills from '@/components/skill/skills';
 import styles from '@/style_modules/home/about.module.css'
 
 export default function Home(props:any) {
   const about = props.about;
+  const skills = props.skills
   return (
     <>
       <h1 className={styles.title}>About</h1>
@@ -10,13 +13,9 @@ export default function Home(props:any) {
 
       <div className={styles.whatido}>
         {about.ido.map((x:any) => {return (
-          
-          <div className={styles.ido}>
-          <h3 className={styles.ido_title}>{x.title}</h3>
-          <p className={styles.ido_content}>{x.content.slice(0,220)+'...'}</p>
-          </div>
+          <WhatIDo styles={styles} title={x.title} content={x.content}/>
         )})}
-        
+        <Skills skills={skills}/>
       </div>
     </>
   );
@@ -25,9 +24,10 @@ export default function Home(props:any) {
 export async function getServerSideProps()
 {
   const about = await fetch('http://localhost:3000/api/about').then(x => {return x.json()})
+  const skills = await fetch('http://localhost:3000/api/skills').then(x => { return x.json() })
   return {
     props: {
-      about:about
+      about,skills
     }
   }
 }
