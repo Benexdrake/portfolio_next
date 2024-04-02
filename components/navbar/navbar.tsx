@@ -13,7 +13,7 @@ export default function Navbar()
                     <li><Link href="/">About</Link></li>
                     <li><Link href="/resume">Resume</Link></li>
                     <li><Link href="projects">Projects</Link></li>
-                    <li><Link href="contact">Contact</Link></li>
+                    <li><Link href="chat">Chat</Link></li>
                     <li><Link href="impressum">Impressum</Link></li>
                     {session && (
                         <li><Link href="admin">Admin</Link></li>
@@ -22,13 +22,13 @@ export default function Navbar()
             </div>
             { !session && 
           <>
-            <button className={style.button} onClick={() => signIn()}>SIGNIN</button>
+            <button className={style.button} onClick={() => signIn('discord')}>Sign In</button>
           </>
         }
 
         { session && 
           <>
-            <button  className={style.button} onClick={() => signOut()}>Sign out</button>
+            <button  className={style.button} onClick={() => signOut()}>Sign Out</button>
           </> 
         }
     </nav>
