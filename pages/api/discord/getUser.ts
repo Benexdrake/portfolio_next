@@ -8,24 +8,14 @@ export default async function handler( req: NextApiRequest, res: NextApiResponse
 
   if(id)
   { 
-    const config = {
-      headers: { Authorization: `Bot ${process.env.TOKEN}` }
-    };
-    let user = await axios.get('https://discord.com/api/users/'+id, config).then(x => { return x.data}).catch(e => console.log(e))
-    
-    let username = user.global_name;
+    let user = await axios.get('http://localhost:8000/userById?userId='+id).then(x => { return x.data}).catch(e => console.log(e))
 
-    if(!user.global_name)
-      username = user.username
-
-    let avatar = ''
+    let avatar = './avatar.jpg'
 
     if(user.avatar)
       avatar = 'https://cdn.discordapp.com/avatars/'+user.id+'/'+user.avatar+'.webp'
     
-    
-    let u:User = {id:user.id, name:username, avatar: avatar}
-
+    let u:User = {id:user.id, name:user.name, avatar: avatar, connectionId:''}
     res.status(200).json(u)
   }
 }

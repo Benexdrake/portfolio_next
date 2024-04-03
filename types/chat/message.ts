@@ -1,6 +1,8 @@
 export type Message = {
-    Id:number;
-    UserId:string;
-    Content:string;
-    Date:string;
+    id:number;
+    userId:string;
+    username:string;
+    avatarUrl:string;
+    content:string;
+    date:string;
 }

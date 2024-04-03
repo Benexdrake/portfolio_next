@@ -2,6 +2,7 @@ import NextAuth from "next-auth/next";
 import Providers from 'next-auth/providers/discord'
 import CredentialsProvider from "next-auth/providers/credentials";
 import getUser from "@/lib/GetUser";
+import InsertUser from "@/services/insert_user";
 
 // const handler = NextAuth({
 //     session: {
@@ -54,6 +55,7 @@ export default NextAuth({
         },
         async session({ session, token }) {
             const user = await getUser(token.accessToken as string);
+            await InsertUser({id:user.id, avatar:user.avatar, name:user.username, connectionId:''});
             session.user = user;
             return session;
           },

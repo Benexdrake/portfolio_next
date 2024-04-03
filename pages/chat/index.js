@@ -2,6 +2,7 @@ import { useSession } from "next-auth/react";
 import styles from '@/style_modules/chat/chat.module.css'
 import MessageBlock from "@/components/message/message";
 import { Message } from "@/types/chat/message";
+import InsertUser from "@/services/insert_user";
 
 import { useEffect, useState } from "react";
 import {
@@ -29,16 +30,16 @@ export default function _()
     setConnection(connect);
     connect
       .start()
-      .then(() => {
-        console.log(connect.connectionId)
+      .then(async () => {
+        console.log('Test')
       })
-
+      
       .catch((err) =>
-        console.error("Error while connecting to SignalR Hub:", err)
+      console.error("Error while connecting to SignalR Hub:", err)
       );
-
+      
       connect.on('ReceiveMessage', (message) => {
-        setMessages((prevMessages) => [...prevMessages, message]);
+        setMessages((prevMessages) => [message,...prevMessages]);
       });
 
     return () => {
@@ -48,34 +49,30 @@ export default function _()
     };
   }, []);
 
-
   const sendMessage = (event) => {
     event.preventDefault();
     if(content != '')
     {
-      let message = {Id:0, Content:content, UserId:session.user.id, Date: new Date()}
+      let message = {id:0, content:content, userId:session.user.id, date: new Date()}
       connection?.send('SendMessage', message);
       setContent('')
     }
   };
 
-    return (
+      return (
         <div>
             {!session && (
-                <div><p>Please Login first</p></div>
-            )}
+              <div><p>Please Login first</p></div>
+              )}
 
             {session && (
-                <div>
+              <div>
                 <div className={styles.chat}>
                   {messages.map(x => {
-                    let id = x.UserId;
-                    // Get User from Discord API
-                    console.log(id)
                     return (
                       <MessageBlock message={x}/>
-                    )
-                  })}
+                      )
+                    })}
                     
                 </div>
                     <form>
