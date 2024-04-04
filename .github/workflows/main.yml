@@ -38,15 +38,15 @@ jobs:
     - name: Install Dependencies
       run: npm ci
 
-    - name: Create .env.local
-      run: |
-        echo 'Github_User=${{secrets.GH_USER}}' > .env.local
-        echo 'Github_Secret=${{secrets.GH_SECRET}}' >> .env.local
-        echo 'Discord_Secret=${{secrets.DISCORD_SECRET}}' >> .env.local
-        echo 'Discord_Client=${{secrets.DISCORD_CLIENT}}' >> .env.local
-        echo 'NEXTAUTH_URL=${{secrets.NEXTAUTH_URL}}' >> .env.local
-        echo 'Mongo=${{secrets.MONGO}}' >> .env.local
-        echo 'PROTECT_API=${{secrets.PROTECT_API}}' >> .env.local
+    # - name: Create .env.local
+    #   run: |
+    #     echo 'Github_User=${{secrets.GH_USER}}' > .env.local
+    #     echo 'Github_Secret=${{secrets.GH_SECRET}}' >> .env.local
+    #     echo 'Discord_Secret=${{secrets.DISCORD_SECRET}}' >> .env.local
+    #     echo 'Discord_Client=${{secrets.DISCORD_CLIENT}}' >> .env.local
+    #     echo 'NEXTAUTH_URL=${{secrets.NEXTAUTH_URL}}' >> .env.local
+    #     echo 'Mongo=${{secrets.MONGO}}' >> .env.local
+    #     echo 'PROTECT_API=${{secrets.PROTECT_API}}' >> .env.local
 
     - name: create-json
       id: create-json
