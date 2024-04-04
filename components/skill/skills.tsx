@@ -10,7 +10,7 @@ export default function Skills(props: any) {
         <div>
             {skillsNames.map((value: string) => {
                 return (
-                    <div className={styles.resume_block} style={{ marginBottom: '20px' }}>
+                    <div className={styles.resume_block} key={value} style={{ marginBottom: '20px' }}>
                         <h3 className={styles.working_title}>{value}</h3>
                         <div className={styles.skills}>
                             {skills && skills.map((x: any) => {
