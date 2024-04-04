@@ -48,13 +48,6 @@ jobs:
     #     echo 'Mongo=${{secrets.MONGO}}' >> .env.local
     #     echo 'PROTECT_API=${{secrets.PROTECT_API}}' >> .env.local
 
-    - name: create-json
-      id: create-json
-      uses: jsdaniell/create-json@v1.2.2
-      with:
-        name: "aboutMe.json"
-        json: '${{secrets.ABOUTME}}'
-
       # Build the Project with npm run build
     - name: Build Project
       run: npm run build
