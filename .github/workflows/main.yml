@@ -43,6 +43,8 @@ jobs:
         
         echo 'NEXTAUTH_URL=${{secrets.NEXTAUTH_URL}}' > .env.local
         echo 'NEXTAUTH_SECRET=${{secrets.NEXTAUTH_SECRET}}' >> .env.local
+        echo 'CLIENTID=${{secrets.DISOCRD_CLIENT}}' >> .env.local
+        echo 'CLIENTSECRET=${{secrets.DISCORD_SECRET}}' >> .env.local
 
       # Build the Project with npm run build
     - name: Build Project
