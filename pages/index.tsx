@@ -1,9 +1,8 @@
-import WhatIDo from '@/components/home/whatido';
 import Skills from '@/components/skill/skills';
 import styles from '@/style_modules/home/about.module.css'
 
 export default function Home(props:any) {
-  const about = props.about;
+
   const skills = props.skills
   return (
     <>
@@ -18,11 +17,10 @@ export default function Home(props:any) {
 
 export async function getServerSideProps()
 {
-  const about = await fetch('http://localhost:3000/api/about').then(x => {return x.json()})
   const skills = await fetch('http://localhost:3000/api/skills').then(x => { return x.json() })
   return {
     props: {
-      about,skills
+      skills
     }
   }
 }
