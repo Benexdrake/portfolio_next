@@ -19,7 +19,7 @@ export default function Navbar()
                     )}
                 </ul>
             </div>
-            { !session && 
+            {/* { !session && 
           <>
             <button className={style.button} onClick={() => signIn('discord')}>Sign In</button>
           </>
@@ -29,7 +29,7 @@ export default function Navbar()
           <>
             <button  className={style.button} onClick={() => signOut()}>Sign Out</button>
           </> 
-        }
+        } */}
     </nav>
     )
 }
