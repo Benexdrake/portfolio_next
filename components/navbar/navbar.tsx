@@ -13,7 +13,6 @@ export default function Navbar()
                     <li><Link href="/">About</Link></li>
                     <li><Link href="/resume">Resume</Link></li>
                     <li><Link href="projects">Projects</Link></li>
-                    <li><Link href="chat">Chat</Link></li>
                     <li><Link href="impressum">Impressum</Link></li>
                     {session && (
                         <li><Link href="admin">Admin</Link></li>
