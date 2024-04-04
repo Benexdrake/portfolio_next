@@ -29,9 +29,9 @@ export default function _()
       .build();
     setConnection(connect);
     connect
-      .start()
-      .then(async () => {
-        console.log('Test')
+    .start()
+    .then(async () => {
+
       })
       
       .catch((err) =>

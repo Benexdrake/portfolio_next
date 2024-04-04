@@ -8,15 +8,10 @@ export default function Home(props:any) {
   return (
     <>
       <h1 className={styles.title}>About</h1>
-      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro enim consequuntur beatae iure incidunt minima dolorem? Aspernatur maiores eum velit enim hic obcaecati iste odit facere ipsa. Dolor, qui.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro enim consequuntur beatae iure incidunt minima dolorem? Aspernatur maiores eum velit enim hic obcaecati iste odit facere ipsa. Dolor, qui.</p>
-
-      <div className={styles.whatido}>
-        {about.ido.map((x:any) => {return (
-          <WhatIDo styles={styles} title={x.title} content={x.content}/>
-        )})}
+      <p className={styles.text}>
+      Ich bin eine motivierte und vielseitige Person, stets bereit, neue Herausforderungen anzunehmen. Mit Leidenschaft für das Lernen bin ich bestrebt, qualitativ hochwertige Ergebnisse zu liefern. Mit einer positiven Einstellung und einem Wachstumsdenken bin ich bereit, einen bedeutenden Beitrag zu leisten und Großes zu erreichen
+      </p>
         <Skills skills={skills}/>
-      </div>
     </>
   );
 }
