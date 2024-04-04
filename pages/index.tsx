@@ -15,9 +15,9 @@ export default function Home(props:any) {
   );
 }
 
-export async function getServerSideProps()
+export async function getServerSideProps(test:any)
 {
-  const skills = await fetch('http://localhost:3000/api/skills').then(x => { return x.json() })
+  const skills = await fetch(process.env.NEXTAUTH_URL+'/api/skills').then(x => { return x.json() })
   return {
     props: {
       skills

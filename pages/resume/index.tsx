@@ -40,7 +40,7 @@ export default function Resume(props: any) {
 }
 
 export async function getServerSideProps() {
-    const resume = await fetch('http://localhost:3000/api/resume').then(x => { return x.json() })
+    const resume = await fetch(process.env.NEXTAUTH_URL+'/api/resume').then(x => { return x.json() })
     return {
         props: {
             resume

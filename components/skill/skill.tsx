@@ -5,7 +5,7 @@ export default function Skill(props:any)
     const skill = props.skill
 
     return (
-        <div className={styles.skill}>
+        <div className={styles.skill} key={skill.title}>
             <div className={styles.skill_wrap}>
                 <div className={styles.image}>
                     <img src={'./icons/'+skill.icon} alt="" />

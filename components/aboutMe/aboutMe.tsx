@@ -7,7 +7,7 @@ export default function AboutMe(props:any) {
 
   useEffect(() => {
     const fetchAboutMe = async () => {
-      let a = await fetch('http://localhost:3000/api/info').then(x => {return x.json()})
+      let a = await fetch('/api/info').then(x => {return x.json()})
       setAboutMe(a)
       
     }
