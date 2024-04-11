@@ -20,7 +20,7 @@ export default function AboutMe(props:any) {
         {aboutMe && (
           <div className={styles.aboutMe}>
             <div className={styles.aboutMe_position}>
-              <img className={styles.aboutMe_image} src="./Me.png" alt="" />
+              <img className={styles.aboutMe_image} src="../Me.png" alt="" />
               <div className={styles.aboutMe_title}>
                 <h1>{aboutMe.name}</h1>
               </div>
@@ -76,7 +76,7 @@ export default function AboutMe(props:any) {
                         </div>
                 </div>
                 <div className={styles.btn_block}>
-                  <a href='/' className={styles.button}>Download CV</a>
+                  <a href='../Lebenslauf.pdf' target='_blank' className={styles.button}>Download CV</a>
                 </div>
             </div>
         </div>
