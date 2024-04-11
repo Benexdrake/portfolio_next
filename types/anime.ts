@@ -1,15 +1,13 @@
 export type Anime = {
-    id:string
+    _id:string
     title:string
     description:string
     rating:number
     seasons:number
     episodes:number
     url:string
-    imageUrl_Card:string
-    imageUrl_Banner:string
+    language:string;
+    imageUrl:string
     tags:string[]
-    publisher:string
-    audios:string[]
-    subTitles:string[]   
+    publisher:string  
 }
