@@ -18,7 +18,6 @@ export default function AboutMe(props:any) {
   return (
     <div>
         {aboutMe && (
-
           <div className={styles.aboutMe}>
             <div className={styles.aboutMe_position}>
               <img className={styles.aboutMe_image} src="./Me.png" alt="" />
@@ -29,8 +28,16 @@ export default function AboutMe(props:any) {
                 <p>{aboutMe.title}</p>
               </div>
                 <ul className={styles.icons}>
-                  <li className={styles.icon}><i className="fa-brands fa-github"></i></li>
-                  <li className={styles.icon}><i className="fa-brands fa-linkedin"></i></li>
+                  <li className={styles.icon}>
+                    <a href={aboutMe.github}>
+                    <i className="fa-brands fa-github"></i>
+                    </a>
+                    </li>
+                  <li className={styles.icon}>
+                    <a href={aboutMe.linkedin}>
+                    <i className="fa-brands fa-linkedin"></i>
+                    </a>
+                    </li>
                 </ul>
                 <div className={styles.info}>
                   <div style={{width:'50px', textAlign:'center'}}>
