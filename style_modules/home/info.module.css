@@ -66,9 +66,14 @@
     border-radius: 5px;
 }
 
-.icon >i:hover {
+.icon >a:hover {
     color: var(--color4);
     text-shadow: 0px 0px 10px var(--color3);
+}
+
+.icon a {
+    color: var(--color3);
+    text-decoration: none;
 }
 
 

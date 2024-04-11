@@ -3,6 +3,7 @@
     margin: auto;
     padding: 0rem;
     max-width: 1000px;
+    height: 1210px;
 }
 
 .box {
@@ -12,6 +13,8 @@
     max-width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
+    position: relative;
+    top: -70px;
 }
 
 .header {
@@ -25,4 +28,12 @@
 .break_line {
     color: var(--color4);
     margin: 10px 0;
+}
+
+.title {
+    color: var(--color3);
+    font-size: 2.5rem;
+    position: relative;
+    top: -50px;
+    text-shadow: 0px 5px 10px #000;
 }

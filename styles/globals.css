@@ -25,6 +25,7 @@ body{
     gap: 30px;
     margin: auto;
     color: var(--color4);
+    min-height: 96vh;
 }
 
 .children {
