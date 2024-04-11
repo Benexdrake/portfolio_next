@@ -8,7 +8,7 @@ export default function Footer()
         <div className={styles.footer}>
             <div className={styles.main}>
             <p>Website was build with <a href="https://nextjs.org/" target='_blank'>NextJs</a></p>
-            <Link href="impressum">Impressum</Link>
+            <Link href="/impressum">Impressum</Link>
             </div>
         </div>
     )
