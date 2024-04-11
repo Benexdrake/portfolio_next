@@ -19,6 +19,7 @@
     left: 50%;
     top: -100px;
     transform: translateX(-50%);
+    border-bottom: 3px solid var(--color3);
 }
 
 .aboutMe_list {
