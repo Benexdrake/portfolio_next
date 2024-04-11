@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import animesDB from './Animes.json'
+import animesDB from '@/public/Animes.json'
 import { Anime } from '@/types/anime';
  
 export default async function handler(
