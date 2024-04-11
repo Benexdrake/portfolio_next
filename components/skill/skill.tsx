@@ -8,7 +8,7 @@ export default function Skill(props:any)
         <div className={styles.skill} key={skill.title}>
             <div className={styles.skill_wrap}>
                 <div className={styles.image}>
-                    <img src={'./icons/'+skill.icon} alt="" />
+                    <img src={'./assets/icons/'+skill.icon} alt="" />
                 </div>
                 <div>
                     <div className={styles.skill_header}>
