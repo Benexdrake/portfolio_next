@@ -35,11 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env
-public/Me.png
-public/aboutMe.json
-public/aboutMe____.json
-public/about.json
-public/information.json
-public/resume.json
-pages/api/crunchyroll/Animes.json
-public/Lebenslauf.pdf
+public
