@@ -1,4 +1,4 @@
-import styles from '@/style_modules/home/info.module.css'
+import styles from '@/style_modules/info.module.css'
 import { useEffect, useState } from 'react';
 
 

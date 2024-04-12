@@ -1,4 +1,4 @@
-import styles from '@/style_modules/home/resume.module.css'
+import styles from '@/style_modules/resume.module.css'
 
 export default function Resume(props: any) {
     const resume = props.resume;
