@@ -23,15 +23,26 @@ export default async function handler(
     {
       let a = animes.filter(x => x.title.toLowerCase().includes(name.toLowerCase()));
       if(a.length > 20)
-        res.status(200).json(a.slice(start,end))
+        {
+          res.status(200).json({
+            length: a.length,
+            animes:a.slice(start,end)
+          })
+        }
       else
       {
-        res.status(200).json(a)
+        res.status(200).json({
+          length: a.length,
+          animes:a
+        })
       }
     }
     else
     {
       let a = animesDB.slice(start,end);
-      res.status(200).json(a)
+      res.status(200).json({
+        length: animesDB.length,
+        animes:a
+      })
     }
 }
