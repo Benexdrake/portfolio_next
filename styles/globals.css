@@ -15,17 +15,19 @@
 body{
     background: rgb(48,56,65);
     background: linear-gradient(90deg, rgba(48,56,65,1) 0%, rgba(97,119,134,1) 50%, rgba(48,56,65,1) 100%);     
+    background-position: center;
+    background-size:cover;
 }
 
 .main {
-    padding-top: 100px;
-    width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    margin: auto;
+    margin: 100px auto auto auto;
+    width: 1200px;
+    height: 96vh;
     color: var(--color4);
-    min-height: 96vh;
 }
 
 .children {
